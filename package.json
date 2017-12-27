@@ -4,6 +4,7 @@
   "description": "",
   "main": "entry.js",
   "dependencies": {
+    "gulp": "3.9.1",
     "webpack": "3.10.0"
   },
   "devDependencies": {},
