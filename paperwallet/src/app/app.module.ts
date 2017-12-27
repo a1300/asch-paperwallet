@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 //components
 import { AppComponent } from './app.component';
 import { QRCodeComponent } from './QRCode/qrcode.component';
-import { FooterComponent } from './Footer/footer.component';
+import { FootComponent } from './Foot/foot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QRCodeComponent,
-    FooterComponent
+    FootComponent
   ],
   imports: [
     BrowserModule
