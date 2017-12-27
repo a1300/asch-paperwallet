@@ -1,15 +1,30 @@
-
+"use strict";
 
 var QRCode = require('qrcode');
 var canvas = document.getElementById('canvas');
 
 
+function showQRCode(qrText) {
 
-QRCode.toCanvas(canvas, 'Das ist der Text', function(error){
-    if(error)
-        console.error(error);
-    else
-        console.log('success');
-})
+    if(qrText === undefined)
+        qrText = '';
 
-console.log('geladen');
+    QRCode.toCanvas(canvas, qrText, function(error){
+        if(error)
+            console.error(error);
+        else
+            console.log('success');
+    });
+
+}
+
+
+window.onload = function () {
+    
+    document.getElementById('btnSubmit').onclick = function() {
+        console.log('clicked');
+        let val = document.getElementById('myText')
+        showQRCode(val.value);
+    };
+};
+
