@@ -53,9 +53,15 @@ gulp.task('webpack', function() {
 
     console.log('starting to pack the ')
     return gulp.src('./src/*.js')
-               .pipe(webpack_stream( 
-                   require('./webpack.config.js') 
-                ))
+               .pipe(webpack_stream(
+                   {
+                    entry: {
+                        entry: './src/app.js'
+                    },
+                    output: {
+                        filename: './bundle.js'
+                    }
+                }))
                .pipe(gulp.dest('dist'));
 });
 

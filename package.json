@@ -9,13 +9,14 @@
     "gulp": "3.9.1",
     "http-server": "0.10.0",
     "node-zip": "1.1.1",
+    "qrcode": "^1.0.0",
     "webpack": "3.10.0",
     "webpack-stream": "4.0.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server dist/"
+    "start": "http-server dist/ -o"
   },
   "repository": {
     "type": "git",
