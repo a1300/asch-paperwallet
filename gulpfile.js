@@ -66,4 +66,4 @@ gulp.task('webpack', function() {
 });
 
 
-gulp.task('default', ['clean', 'copy', 'webpack']);
+gulp.task('default', ['clean', 'copy', 'webpack', 'zip']);
