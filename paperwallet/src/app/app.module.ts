@@ -1,16 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
-import { AppComponent } from './app.component';
-
 //components
+import { AppComponent } from './app.component';
 import { QRCodeComponent } from './QRCode/qrcode.component';
+import { FooterComponent } from './Footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QRCodeComponent
+    QRCodeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
