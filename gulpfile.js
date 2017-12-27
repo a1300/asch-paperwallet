@@ -1,11 +1,18 @@
 "use strict";
 var gulp = require('gulp');
+
+//clean
 var del = require('del');
 
 //zipping
 var fs = require('fs');
 var path = require('path');
 var zip = new require('node-zip')();
+
+//webpack
+var webpack_stream = require('webpack-stream');
+
+
 
 
 gulp.task('clean', function() {
@@ -39,8 +46,18 @@ gulp.task('zip', function() {
         let data = zip.generate({ base64:false, compression: 'DEFLATE' });
         fs.writeFileSync('./dist/offline-paperwallet.zip', data, 'binary');
     });
-
 });
 
 
-gulp.task('default', ['clean', 'copy']);
+gulp.task('webpack', function() {
+
+    console.log('starting to pack the ')
+    return gulp.src('./src/*.js')
+               .pipe(webpack_stream( 
+                   require('./webpack.config.js') 
+                ))
+               .pipe(gulp.dest('dist'));
+});
+
+
+gulp.task('default', ['clean', 'copy', 'webpack']);
