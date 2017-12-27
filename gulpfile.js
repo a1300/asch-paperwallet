@@ -15,5 +15,7 @@ gulp.task('copy', ['clean'], function() {
 gulp.task('clean', function() {
     console.log('cleaning...');
     return del('dist/*.js');
-});
+}); 
+
+
 
