@@ -1,0 +1,24 @@
+{
+  "name": "asch-paperwallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "dependencies": {
+    "webpack": "3.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1300/asch-paperwallet.git"
+  },
+  "author": "a1300",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a1300/asch-paperwallet/issues"
+  },
+  "homepage": "https://github.com/a1300/asch-paperwallet#readme"
+}
