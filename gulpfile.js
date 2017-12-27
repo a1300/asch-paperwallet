@@ -3,8 +3,14 @@ var gulp = require('gulp');
 var del = require('del');
 
 
-gulp.task('copy', ['clean'], function() {
 
+gulp.task('clean', function() {
+    console.log('start cleaning...');
+    return del('dist/*');
+}); 
+
+gulp.task('copy', function() {
+    console.log('start copy...')
     gulp.src(
         './src/index.html'
     )
@@ -12,10 +18,4 @@ gulp.task('copy', ['clean'], function() {
 });
 
 
-gulp.task('clean', function() {
-    console.log('cleaning...');
-    return del('dist/*.js');
-}); 
-
-
-
+gulp.task('default', ['clean', 'copy']);

@@ -4,8 +4,10 @@
   "description": "",
   "main": "entry.js",
   "dependencies": {
+    "del": "^3.0.0",
     "gulp": "3.9.1",
-    "webpack": "3.10.0"
+    "http-server": "0.10.0",
+    "webpack": "3.10.0",
   },
   "devDependencies": {},
   "scripts": {
