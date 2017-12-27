@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core'
-import  { ngQrCode } from 'angular-qrcode';
 import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 
