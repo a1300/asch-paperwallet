@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 //qr
-import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
+import { NgxQRCodeComponent } from './QRCodeContainer/QRCodeDisplay/qrcodedisplay.component';
 
 
 //components
@@ -15,11 +15,11 @@ import { FootComponent } from './Foot/foot.component';
   declarations: [
     AppComponent,
     QRCodeContainerComponent,
-    FootComponent
+    FootComponent,
+    NgxQRCodeComponent
   ],
   imports: [
-    BrowserModule,
-    NgxQRCodeModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
