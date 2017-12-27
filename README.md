@@ -9,3 +9,12 @@ npm install gulp-cli
 gulp
 npm start
 ```
+
+TODO:
+-Add download Link for zip
+-Add print button
+-Add link to github repo
+-Add asch-logo (png)
+-Add favicon
+-write tutorial
+
