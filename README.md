@@ -1,20 +1,10 @@
-# asch-paperwallet
+# Paperwallet
+This is a asch-paperwallet for online and offline use.
 
-Website (link)[]
+## Development server
 
-```bash
-git clone http://github.com/a1300/asch-paperwallet
-npm install
-npm install gulp-cli
-gulp
-npm start
-```
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-TODO:
--Add download Link for zip
--Add print button
--Add link to github repo
--Add asch-logo (png)
--Add favicon
--write tutorial
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
