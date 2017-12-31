@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 //qr component
@@ -22,7 +23,8 @@ import { PrivateKeyInputComponent } from './QRCodeContainer/PrivateKeyInput/priv
     PrivateKeyInputComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
