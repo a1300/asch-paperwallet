@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Output, EventEmitter } from '@angular/core'
 
 
 @Component({
@@ -9,7 +9,10 @@ import { Component } from '@angular/core'
 export class PrivateKeyInputComponent {
     privateKey: string = 'test';
 
+    @Output() privateKeyChanged = new EventEmitter<string>(); 
+
     submitPrivateKey(): void {
         console.log(this.privateKey);
+        this.privateKeyChanged.emit(this.privateKey);
     }
 }

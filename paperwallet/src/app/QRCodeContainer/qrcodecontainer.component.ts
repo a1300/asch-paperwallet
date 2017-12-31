@@ -10,5 +10,10 @@ import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 export class QRCodeContainerComponent  {
     
     privateKey: string = 'Das ist ein Test';
-    
+ 
+    getNotificationOnPrivateKeyChanged(event): void {
+        console.log('Parent got new event');
+    }
+
+
 }
