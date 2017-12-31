@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-//qr
+//qr component
 import { NgxQRCodeComponent } from './QRCodeContainer/QRCodeDisplay/qrcodedisplay.component';
 
 
@@ -10,13 +10,16 @@ import { NgxQRCodeComponent } from './QRCodeContainer/QRCodeDisplay/qrcodedispla
 import { AppComponent } from './app.component';
 import { QRCodeContainerComponent } from './QRCodeContainer/qrcodecontainer.component';
 import { FootComponent } from './Foot/foot.component';
+import { PrivateKeyInputComponent } from './QRCodeContainer/PrivateKeyInput/privatekeyinput.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     QRCodeContainerComponent,
     FootComponent,
-    NgxQRCodeComponent
+    NgxQRCodeComponent,
+    PrivateKeyInputComponent
   ],
   imports: [
     BrowserModule
