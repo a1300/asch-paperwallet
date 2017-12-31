@@ -1,10 +1,10 @@
-<h3>QRCODE component</h3>
+  <ngx-qrcode [qrc-value] ='privateKey'
+              qrc-errorCorrectionLevel = "L">
+  </ngx-qrcode>
 
-<ngx-qrcode [qrc-value] ='privateKey'
-            qrc-errorCorrectionLevel = "L">
-</ngx-qrcode>
+  <p>address: {{address}}</p>
 
-<p>address: {{address}}</p>
+  <p>private Key: {{privateKey}}</p>
 
-<privatekeyinput (privateKeyChanged)="getNotificationOnPrivateKeyChanged($event)">
-</privatekeyinput>
+  <privatekeyinput (privateKeyChanged)="getNotificationOnPrivateKeyChanged($event)">
+  </privatekeyinput>
