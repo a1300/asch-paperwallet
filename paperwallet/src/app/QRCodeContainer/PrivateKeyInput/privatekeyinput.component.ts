@@ -13,7 +13,7 @@ export class PrivateKeyInputComponent implements OnInit {
     @Output() privateKeyChanged = new EventEmitter<string>(); 
 
     ngOnInit(): void {
-        this.privateKey = 'your private key...';
+        this.privateKey = 'your private key';
     }
 
     submitPrivateKey(): void {

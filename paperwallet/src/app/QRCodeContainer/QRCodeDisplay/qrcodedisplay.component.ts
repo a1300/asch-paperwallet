@@ -7,14 +7,14 @@ let QRCode = require('qrcode');
 @Component({
   selector: 'ngx-qrcode',
   template: `<div id="enClosing">
-              <div #qrcElement [class]="cssClass"></div>
+              <div #qrcElement class="qrClass"></div>
              </div>`,
   styleUrls: ['./qrcodedisplay.component.css']
 })
 export class NgxQRCodeComponent implements OnChanges {
 
   @Input('qrc-element-type') elementType: 'url' | 'img' | 'canvas' = 'url';
-  @Input('qrc-class') cssClass = 'qrcode'; 
+  // @Input('qrc-class') cssClass = 'qrcode'; 
   @Input('qrc-value') value = 'https://www.techiediaries.com';
   @Input('qrc-version') version : '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12' | '13' | '14' | '15' | '16' | '17' | '18' | '19' | '20' | '21' | '22' | '23' | '24' | '25' | '26' | '27' | '28' | '29' | '30' | '31' | '32' | '33' | '34' | '35' | '36' | '37' | '38' | '39'|'40' | '' = '';
 
