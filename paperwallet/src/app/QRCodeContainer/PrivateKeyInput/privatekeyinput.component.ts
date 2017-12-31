@@ -1,4 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core'
+import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 
 @Component({
@@ -6,13 +7,17 @@ import { Component, Output, EventEmitter } from '@angular/core'
     templateUrl: './privatekeyinput.component.html',
     styleUrls: ['./privatekeyinput.component.css']
 })
-export class PrivateKeyInputComponent {
-    privateKey: string = 'test';
-
+export class PrivateKeyInputComponent implements OnInit {
+    
+    privateKey: string = '';
     @Output() privateKeyChanged = new EventEmitter<string>(); 
 
+    ngOnInit(): void {
+        this.privateKey = 'your private key...';
+    }
+
     submitPrivateKey(): void {
-        console.log(this.privateKey);
+        console.log('submitted new private key.');
         this.privateKeyChanged.emit(this.privateKey);
     }
 }

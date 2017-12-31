@@ -6,8 +6,10 @@ let QRCode = require('qrcode');
 
 @Component({
   selector: 'ngx-qrcode',
-  template: `<div #qrcElement [class]="cssClass"></div>`,
-  styles: []
+  template: `<div id="enClosing">
+              <div #qrcElement [class]="cssClass"></div>
+             </div>`,
+  styleUrls: ['./qrcodedisplay.component.css']
 })
 export class NgxQRCodeComponent implements OnChanges {
 

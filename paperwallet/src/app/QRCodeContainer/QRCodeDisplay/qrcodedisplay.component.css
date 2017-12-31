@@ -1,0 +1,9 @@
+
+#enClosing {
+    height:150px; 
+    border:1px solid black; 
+    width: 150px; 
+    vertical-align:middle;
+    text-align: center;
+    display: inline-block;
+}
