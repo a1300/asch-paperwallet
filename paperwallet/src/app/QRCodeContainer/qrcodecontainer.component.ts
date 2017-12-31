@@ -11,9 +11,9 @@ export class QRCodeContainerComponent  {
     
     privateKey: string = 'Das ist ein Test';
  
-    getNotificationOnPrivateKeyChanged(event): void {
+    getNotificationOnPrivateKeyChanged(newPrivateKeyFromChild): void {
         console.log('Parent got new event');
+        this.privateKey = newPrivateKeyFromChild;
     }
-
 
 }
