@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+//providers
+import { AschService } from '../services/asch.service';
 
 //qr component
 import { NgxQRCodeComponent } from './QRCodeContainer/QRCodeDisplay/qrcodedisplay.component';
@@ -26,7 +28,7 @@ import { PrivateKeyInputComponent } from './QRCodeContainer/PrivateKeyInput/priv
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ AschService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

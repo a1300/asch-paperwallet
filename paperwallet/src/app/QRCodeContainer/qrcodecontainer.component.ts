@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core'
-import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
-
+import { AschService } from '../../services/asch.service';
 
 @Component({
     selector: 'qrcodecontainer',
@@ -10,10 +9,15 @@ import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 export class QRCodeContainerComponent  {
     
     privateKey: string = '';
+    address: string = '';
+
+    constructor(private aschService: AschService) {
+    }
  
     getNotificationOnPrivateKeyChanged(newPrivateKeyFromChild): void {
         console.log('Parent got new event');
         this.privateKey = newPrivateKeyFromChild;
+        this.address = this.aschService.getAddres(this.privateKey);
     }
 
 }
