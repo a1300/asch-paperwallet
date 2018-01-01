@@ -21,7 +21,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: QRCodeContainerComponent },
-  { path: 'tutorial', component: TutorialComponent }
+  { path: 'tutorial', component: TutorialComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

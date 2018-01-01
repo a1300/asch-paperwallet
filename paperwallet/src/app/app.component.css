@@ -11,9 +11,10 @@ li {
     padding: 20px;
     color: rgba(255, 255, 255, 0.3);
 }
-li:hover {
-    background-color: #636363;
 
+li:hover {
+    background-color: rgba(99, 99, 99, 0.198);
+    cursor: pointer;
 }
 
 li p {
@@ -40,19 +41,12 @@ header ul li {
     padding:0;
     display: block;
 }
-/* .title {
-    color: #fdcc52;
-    text-align: center;
-    line-height: 76px;
-    margin-left: 20px;
-    width: 50px;
-    float: left;
-} */
 
 
 #titleImage {
     position: relative;
     margin: 20px;
+    float: left;
 }
 
 /* drop shadow */
