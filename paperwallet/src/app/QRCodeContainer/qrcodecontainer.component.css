@@ -6,3 +6,9 @@ p {
   width: 600px;
   height: 200px;
 }
+
+@media print {
+  privatekeyinput {
+    display: none;
+  }
+}

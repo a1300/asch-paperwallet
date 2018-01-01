@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+        "styles/css/cssreset.css",
         "styles/css/new-age.css"
       ],
       "scripts": [],
