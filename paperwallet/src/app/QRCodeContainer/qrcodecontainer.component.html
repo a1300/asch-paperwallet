@@ -1,11 +1,20 @@
-  <ngx-qrcode [qrc-value] ='privateKey'
-              qrc-errorCorrectionLevel = "L"
-              qrc-element-type='canvas'>
-  </ngx-qrcode>
+<table>
+<tbody>
+  <tr>
+    <th>
+    <ngx-qrcode [qrc-value] ='privateKey'
+                qrc-errorCorrectionLevel = "H"
+                qrc-element-type='canvas'>
+    </ngx-qrcode>
+    </th>
 
-  <p>address: {{address}}</p>
+    <th>
+    <p>address: {{address}}</p>
+    <p>private Key: {{privateKey}}</p>
+    </th>
+  </tr>
+</tbody>
+</table>
 
-  <p>private Key: {{privateKey}}</p>
-
-  <privatekeyinput (privateKeyChanged)="getNotificationOnPrivateKeyChanged($event)">
-  </privatekeyinput>
+<privatekeyinput (privateKeyChanged)="getNotificationOnPrivateKeyChanged($event)">
+</privatekeyinput>

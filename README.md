@@ -1,4 +1,4 @@
-# Paperwallet
+# Asch-Paperwallet
 This is a asch-paperwallet for online and offline use.
 
 ## Development server

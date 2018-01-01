@@ -1,20 +1,22 @@
 
-#enClosing {
-    height: 200px; 
+/* #enClosing {
     border: 1px solid black; 
-    width: 200px; 
     vertical-align: middle;
     text-align: center;
     display: inline-block;
     align-content: center;
-}
+    height: 200px;
+    width: 200px;
+    align-content: stretch;
+} */
 
 
 qrClass {
     height: 200px;
     width: 200px;
-    
+    outline: black 1px solid;
     min-height: 200px;
     max-width: 200px;
     background: yellow;
+    vertical-align: center;
 }
