@@ -2,17 +2,20 @@
   <header>
     <ul>
       <li id="titleImage">
-        <img src="../favicon.ico">
+        <img src="../favicon.ico" routerLink="/">
       </li>
-      <li id="title">{{title}}</li>
+      <li routerLink="/"><p> {{title}}</p></li>
+      <li routerLink="tutorial"><p>Tutorial</p> </li>
     </ul>
   </header>
 
-  <qrcodecontainer style="position:absolute;">
-  </qrcodecontainer>
+  <!-- <qrcodecontainer style="position:absolute;">
+  </qrcodecontainer> -->
 
   <footer>
       <foot></foot>
   </footer>
   
+  <router-outlet></router-outlet>
+
 </div>

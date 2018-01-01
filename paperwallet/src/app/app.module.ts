@@ -14,7 +14,15 @@ import { AppComponent } from './app.component';
 import { QRCodeContainerComponent } from './QRCodeContainer/qrcodecontainer.component';
 import { FootComponent } from './Foot/foot.component';
 import { PrivateKeyInputComponent } from './QRCodeContainer/PrivateKeyInput/privatekeyinput.component';
+import { TutorialComponent } from './Tutorial/tutorial.component';
 
+//routes
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: QRCodeContainerComponent },
+  { path: 'tutorial', component: TutorialComponent }
+];
 
 @NgModule({
   declarations: [
@@ -22,11 +30,13 @@ import { PrivateKeyInputComponent } from './QRCodeContainer/PrivateKeyInput/priv
     QRCodeContainerComponent,
     FootComponent,
     NgxQRCodeComponent,
-    PrivateKeyInputComponent
-  ],
+    PrivateKeyInputComponent,
+    TutorialComponent
+],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [ AschService ],
   bootstrap: [AppComponent]
