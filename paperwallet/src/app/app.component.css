@@ -20,20 +20,18 @@ footer {
     bottom:0;
     width:100%;
     height:60px;
- }
- 
+}
+
 
 @media print {
     header {
         display: none;
     }
 }
-
 div {
     background-image: url('../favicon.ico');
     background-color: #222222;
 }
-
 header ul li {
     margin: 0;
     padding:0;

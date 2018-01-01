@@ -1,4 +1,7 @@
-p {
+table tbody tr th div {
+  position: absolute;
+  left: 230px;
+  top: 30px;
   text-align: left;
 }
 

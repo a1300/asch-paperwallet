@@ -2,16 +2,19 @@
 <tbody>
   <tr>
     <th>
-    <ngx-qrcode [qrc-value] ='privateKey'
-                qrc-errorCorrectionLevel = "H"
-                qrc-element-type='canvas'>
-    </ngx-qrcode>
+      <ngx-qrcode [qrc-value] ='privateKey'
+                  qrc-errorCorrectionLevel = "H"
+                  qrc-element-type='canvas'>
+      </ngx-qrcode>
     </th>
 
     <th>
-    <p>address: {{address}}</p>
-    <p>private key: {{privateKey}}</p>
+      <div>
+        <p>address: {{address}}</p>
+        <p>private key: {{privateKey}}</p>
+      </div>
     </th>
+
   </tr>
 </tbody>
 </table>
