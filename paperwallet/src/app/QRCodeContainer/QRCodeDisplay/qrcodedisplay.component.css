@@ -2,7 +2,6 @@
 qrClass {
     height: 200px;
     width: 200px;
-    outline: black 1px solid;
     min-height: 200px;
     max-width: 200px;
     background: yellow;

@@ -1,6 +1,7 @@
 <textarea wrap="soft" [(ngModel)]="privateKey"
           placeholder="Input your private key here..."></textarea>
 
-<div>
+<div id="buttons">
   <input class="btn" (click)="submitPrivateKey()" type="submit" value="Generate">
+  <input class="btn" id="printBtn" (click)="print()" type="submit" value="Print">
 </div>

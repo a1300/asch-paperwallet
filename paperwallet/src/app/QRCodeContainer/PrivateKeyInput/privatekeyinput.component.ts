@@ -20,4 +20,8 @@ export class PrivateKeyInputComponent implements OnInit {
         console.log('submitted new private key.');
         this.privateKeyChanged.emit(this.privateKey);
     }
+
+    print():void {
+        window.print();
+    }
 }
