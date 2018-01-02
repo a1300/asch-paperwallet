@@ -12,16 +12,15 @@
 
       <!--testData only-->
       <img style="max-width:180px; max-height:180px;" *ngIf="privateKey === undefined || privateKey === null || privateKey.length === 0" src="../assets/screenshot.png">
-        <!-- <div class="after">Test Data</div> -->
     </th>
 
     <th>
       <div>
-        <p class="testData" *ngIf="address === undefined || address === null || address.length === 0">Address: A621bCfRUGxwjEYnNnnam7XoVN9Xqe6PTi</p>
-        <p *ngIf="address.length > 0">Address: {{address}}</p>
+        <p class="testData" *ngIf="address === undefined || address === null || address.length === 0"><strong>Address:</strong> A621bCfRUGxwjEYnNnnam7XoVN9Xqe6PTi</p>
+        <p *ngIf="address.length > 0"><strong>Address:</strong> {{address}}</p>
 
-        <p *ngIf="privateKey.length > 0">Private Key: {{privateKey}}</p>
-        <p class="testData" *ngIf="privateKey === undefined || privateKey === null || privateKey === ''">Private Key: kitchen bridge chalk sign jaguar segment company cigar claim squirrel castle spare</p>
+        <p *ngIf="privateKey.length > 0"><strong>Private Key:</strong> {{privateKey}}</p>
+        <p class="testData" *ngIf="privateKey === undefined || privateKey === null || privateKey === ''"><strong>Private Key:</strong> kitchen bridge chalk sign jaguar segment company cigar claim squirrel castle spare</p>
       </div>
     </th>
 

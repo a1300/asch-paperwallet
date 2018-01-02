@@ -1,0 +1,10 @@
+p {
+  font-weight: normal;
+  max-width: 500px;
+}
+
+.tutorialImage {
+  height: 350px;
+  width: auto;
+  margin-left: 20px;
+}
