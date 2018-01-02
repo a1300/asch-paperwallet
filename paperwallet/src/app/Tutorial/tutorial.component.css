@@ -4,7 +4,11 @@ p {
 }
 
 .tutorialImage {
-  height: 350px;
+  height: 250px;
   width: auto;
   margin-left: 20px;
+}
+
+#tutorialContainer {
+  margin-bottom: 76px;
 }
